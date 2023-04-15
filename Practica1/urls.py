@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Practica1.views import saludo, despedida, damefecha, calculaedad
+from Practica1.views import saludo, despedida, damefecha, calculaedad # Normalmente el app de configuracion no cuenta con el archivo views, pero se puede crear
 
 
 urlpatterns = [

@@ -34,8 +34,14 @@ def damefecha(request):
 def calculaedad(request, edad, agno):
     
     #edadactual=18
-    periodo=agno-2022
+    periodo=agno-2023 # Estamos en 2023
     edadfutura=edad+periodo
+
+    '''
+    Esta línea en Python es una cadena de texto que contiene etiquetas HTML y una cadena de formato (%s) que se usa para incrustar variables dentro de la cadena.
+    En este caso, la cadena de formato espera dos variables: "agno" y "edadfutura".
+    La sintaxis "%(agno, edadfutura)" al final de la cadena se utiliza para proporcionar los valores de las variables que se deben incrustar en la cadena de formato.
+    '''
     documento="<html><body><h2>En el año %s tendras %s años " %(agno,edadfutura)
     
     return HttpResponse(documento)
